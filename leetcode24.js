@@ -7,8 +7,9 @@ var swapPairs = function (head) {
     let dummy = new ListNode()
     dummy.next = head
     let current = dummy
-    
+
     while (current.next !== null && current.next.next !== null) {
+        // 关键点 n1 / n2 在循环中定义，保证 current / n1 / n2的顺序是连续的
         let n1 = current.next
         let n2 = current.next.next
         // 开始交换
