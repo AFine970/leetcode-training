@@ -20,3 +20,11 @@ var isRectangleOverlap = function (rec1, rec2) {
 
     return true
 };
+
+const rec1 = [0,0,2,2], rec2 = [1,1,3,3]
+// true
+
+const rec1 = [0,0,1,1], rec2 = [1,0,2,1]
+// false
+
+console.log(isRectangleOverlap(rec1, rec2))
