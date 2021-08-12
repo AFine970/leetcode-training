@@ -12,7 +12,7 @@ var sortArrayByParity = function (nums) {
     function isEven(num) {
         return num % 2 === 0
     }
-
+    // 双指针往中间走
     let i = 0, j = nums.length - 1
     while (i < j) {
         if (isOdd(nums[i]) && isEven(nums[j])) {
