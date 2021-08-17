@@ -8,6 +8,7 @@ var search = function (nums, target) {
     // 必须双指针进行解题，否则采用数组会内存溢出
     let left = 0, right = nums.length - 1
     while(left <= right) {
+        // 这里的middle不是取距离的一半，而是取中间的下标
         let middle = Math.floor(left + (right - left) / 2)
         if (nums[middle] === target) {
             // 相等直接返回
